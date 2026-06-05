@@ -19,6 +19,10 @@ Don't read these reflexively — fetch when relevant.
 | When you need to… | Read |
 |-------------------|------|
 | Commit, push, open a PR | [`guides/contributing.md`](guides/contributing.md) |
+| Write a tiered spec or roadmap | [`guides/tier-epic-specification-framework.md`](guides/tier-epic-specification-framework.md) |
+| Log architecture decisions | See `architecture-decision-log` skill — lightweight ADR format |
+| Explore a design with multiple AI agents | See `multi-agent-design-exploration` skill — parallel proposals + synthesis |
+| Write a project philosophy doc | See `project-philosophy-document` skill — the "why" before specs |
 | Quick git commands | [`guides/git_procedures.md`](guides/git_procedures.md) |
 | Deploy a service progressively | [`guides/microservice-workflow-guide.md`](guides/microservice-workflow-guide.md) |
 | Code style / engineering baseline | [`templates/general-engineering-standards.md`](templates/general-engineering-standards.md) |

@@ -24,15 +24,23 @@ Don't read these reflexively — fetch when relevant.
 | Cut a new work order | [`templates/work-order.md`](templates/work-order.md) + [`schemas/work-order.schema.json`](schemas/work-order.schema.json) |
 | Commit, push, open a PR | [`guides/contributing.md`](guides/contributing.md) |
 | Write a tiered spec or roadmap | [`guides/tier-epic-specification-framework.md`](guides/tier-epic-specification-framework.md) |
-| Log architecture decisions | See `architecture-decision-log` skill — lightweight ADR format |
-| Explore a design with multiple AI agents | See `multi-agent-design-exploration` skill — parallel proposals + synthesis |
-| Write a project philosophy doc | See `project-philosophy-document` skill — the "why" before specs |
+| Log architecture decisions | [`skills/architecture-decision-records/SKILL.md`](skills/architecture-decision-records/SKILL.md) — invoke as `/architecture-decision-records` |
+| Explore a design with multiple AI agents | [`skills/multi-agent-design-exploration/SKILL.md`](skills/multi-agent-design-exploration/SKILL.md) — invoke as `/multi-agent-design-exploration` |
+| Write a project philosophy doc | [`skills/project-philosophy-document/SKILL.md`](skills/project-philosophy-document/SKILL.md) — invoke as `/project-philosophy-document` |
 | Quick git commands | [`guides/git_procedures.md`](guides/git_procedures.md) |
 | Deploy a service progressively | [`guides/microservice-workflow-guide.md`](guides/microservice-workflow-guide.md) |
 | Code style / engineering baseline | [`templates/general-engineering-standards.md`](templates/general-engineering-standards.md) |
 | Run a session (PM / IC / QA loop, cadence, compaction) | [`templates/WORKFLOW.md`](templates/WORKFLOW.md) |
 | Hand off mid-task | [`templates/HANDOFF.md`](templates/HANDOFF.md) |
 | Background research / philosophy | [`references/README.md`](references/README.md) |
+| Install this library into a new project | [`profiles/`](profiles/) — Minimal / Standard / Full manifests |
+| Apply always-on coding and workflow rules | [`rules/common/`](rules/common/) + language stubs in `rules/typescript/`, `rules/python/`, `rules/go/` |
+| Run a review with a specialized subagent | [`agents/`](agents/) — code-reviewer, security-reviewer, architect, spec-miner, silent-failure-hunter |
+| Execute a Boresight work order | [`agents/builder.md`](agents/builder.md) or [`agents/planner.md`](agents/planner.md) |
+| Convert a feature request to a work order | [`skills/work-order-intake/SKILL.md`](skills/work-order-intake/SKILL.md) |
+| Research and synthesize a topic | [`skills/deep-research/SKILL.md`](skills/deep-research/SKILL.md) |
+| Write a structured code review | [`skills/code-review/SKILL.md`](skills/code-review/SKILL.md) |
+| Write a session handoff | [`skills/session-handoff/SKILL.md`](skills/session-handoff/SKILL.md) |
 
 ## Repository structure
 
@@ -51,6 +59,10 @@ Don't read these reflexively — fetch when relevant.
 ├── features/  decisions/  playbooks/  commands/   # Bundle directories (filling via WO-0002+)
 ├── templates/                    # work-order.md (bundle) + v3 session framework (companion layer)
 ├── guides/                       # Operational protocols (git, deployment)
+├── profiles/                     # Installation profiles: Minimal / Standard / Full
+├── rules/                        # Always-apply guidelines: common/ + language stubs
+├── agents/                       # Curated Claude Code subagent definitions
+├── skills/                       # Invokable Claude Code skills
 ├── references/                   # Research, analysis memos — not operational
 ├── technical-suggestions/        # Tech stack recommendations
 └── archive/                      # Deprecated v01/v02 + old framework files

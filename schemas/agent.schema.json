@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "agent.schema.json",
+  "$comment": "Governance: written by Builder tier (Claude, 2026-06-16); validates agent YAML frontmatter. Field names are codename-neutral per Constitution §1.3.",
+  "title": "Agent Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Kebab-case identifier. Used as the subagent name when installed in .claude/agents/."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "When to invoke this agent. The orchestrator reads this to decide delegation. Must be trigger-specific."
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claude Code tools available to this agent. Principle of least privilege: list only what the role requires."
+    },
+    "model": {
+      "type": "string",
+      "enum": ["haiku", "sonnet", "opus", "fable"],
+      "description": "Model family. Use 'opus' for architecture and spec work; 'sonnet' for review and implementation."
+    },
+    "profile": {
+      "type": "string",
+      "enum": ["standard", "full"],
+      "description": "Minimum library profile that includes this agent. Agents are never part of the Minimal profile."
+    },
+    "maturity": {
+      "type": "string",
+      "enum": ["canonical", "experimental", "archived"],
+      "default": "canonical",
+      "description": "canonical = stable, team-vetted; experimental = in trial; archived = superseded."
+    },
+    "origin": {
+      "type": "string",
+      "description": "Source library or author. Use 'kst_promptware' for first-party agents."
+    }
+  }
+}

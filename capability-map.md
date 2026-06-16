@@ -24,6 +24,22 @@ The bundle can specify, execute, verify, and reconcile its own work.
 
 Queue ordering is provisional — ratified or reordered at WO-0001's `review → complete` gate.
 
+## Capability: Promptware Library Layer (v0.1)
+
+Selectable rules, skills, agents, and profiles that downstream projects copy and install.
+
+> **Note:** F-008 through F-013 were delivered outside the work-order system (no WO ids exist). The status `delivered` is a map-level convenience marker only — not a work-order state. See Ledger L-011 for the coverage-gap record.
+
+| Feature | Description | Work Order | Status |
+|---|---|---|---|
+| F-008 Common rules | 6 always-apply rule files in `rules/common/` | — | `delivered` |
+| F-009 Language rule stubs | TypeScript, Python, Go stubs in `rules/<lang>/` | — | `delivered` |
+| F-010 Development agents | 5 subagent definitions in `agents/`: architect, code-reviewer, security-reviewer, spec-miner, silent-failure-hunter | — | `delivered` |
+| F-011 Governance agents | 3 subagent definitions in `agents/`: planner, builder, gatekeeper | — | `delivered` |
+| F-012 Skills | 7 invokable skills in `skills/`: ADR, multi-agent exploration, project philosophy, work-order intake, deep research, code review, session handoff | — | `delivered` |
+| F-013 Installation profiles | 3 manifests in `profiles/`: Minimal, Standard, Full | — | `delivered` |
+| F-014 Agent + skill schemas | `schemas/agent.schema.json`, `schemas/skill.schema.json` | — | `delivered` |
+
 ## Companion Layer (not bundle-governed)
 
 The v3 session framework (`/templates/CONTEXT.md`, `PROGRESS.md`, `HANDOFF.md`, `WORKFLOW.md`) operates alongside the bundle for session execution. Integration deferred — Ledger L-008.

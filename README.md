@@ -43,6 +43,20 @@ Canonical framework for agent-assisted projects. Copy into a new project's `docs
 - [General engineering standards](templates/general-engineering-standards.md)
 - [Devlog template](templates/Devlog_TEMPLATE.md), [Project plan template](templates/ProjectPlan/)
 
+### Agent library (`agents/`, `skills/`, `rules/`, `profiles/`)
+
+Selectable components for downstream projects. Install via one of three profiles:
+
+- [**Minimal**](profiles/minimal.md) — 2 rules + 1 skill + HANDOFF.md + AGENTS.md template. For single-agent, low-overhead projects.
+- [**Standard**](profiles/standard.md) — All common rules + full v3 session suite + 2 agents + 4 skills. For ongoing AI-assisted development.
+- [**Full**](profiles/full.md) — Everything + Boresight governance bundle + all 8 agents + all 7 skills. For specification-first, multi-agent projects.
+
+**Catalog:**
+- [Rules library](rules/README.md) — Always-apply guidelines. `rules/common/` (6 files) + language stubs (TypeScript, Python, Go).
+- [Agents library](agents/README.md) — 8 curated Claude Code subagent definitions: 5 development agents (architect, code-reviewer, security-reviewer, spec-miner, silent-failure-hunter) + 3 governance agents (planner, builder, gatekeeper).
+- [Skills library](skills/README.md) — 7 invokable skills: ADR, multi-agent design exploration, project philosophy, work-order intake, deep research, code review, session handoff.
+- [Schemas](schemas/) — `skill.schema.json`, `agent.schema.json` (in addition to `work-order.schema.json`).
+
 ### Technical suggestions (`technical-suggestions/`)
 
 - [Tech stack recommendations](technical-suggestions/tech-stack-recommendations.md) — Godot vs. Phaser decision matrix.
@@ -65,11 +79,13 @@ Deprecated v01/v02 execution state and earlier framework versions. Not for activ
 
 ## What This Repository Provides
 
-- **A docs operating system** for structured PM/IC/QA agent sessions with strict context budgets.
-- **Standard templates** for project plans, progress tracking, and handoffs.
+- **A promptware library** — curated rules, agents, skills, and profiles that teams copy into their own repos at the complexity level they need.
+- **The Boresight v4 specification system** — a work-order framework for bounded, auditable AI-assisted development.
+- **The v3 session framework** — PM/IC/QA loop, context management, handoff protocol (companion layer).
 - **Engineering standards** that work across web frameworks.
 
 ## Who This Is For
 
-- Solo developers using AI agents for day-to-day implementation.
-- Teams validating agent-assisted workflows.
+- Solo developers and small teams using AI agents for day-to-day implementation who want a structured, composable starting point.
+- Teams building their own promptware practices who want a governed upstream source to fork from.
+- Agents themselves — this repo is designed to be cold-started from `AGENTS.md` and navigated load-on-demand.

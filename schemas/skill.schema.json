@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "skill.schema.json",
+  "$comment": "Governance: written by Builder tier (Claude, 2026-06-16); validates skill YAML frontmatter. Field names are codename-neutral per Constitution §1.3.",
+  "title": "Skill Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Kebab-case identifier. Used as the /slash-command name when installed."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "One sentence: what this skill does and when to invoke it. Shown during agent selection."
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claude Code tools this skill requires. Omit if skill delegates tool selection to the agent."
+    },
+    "model": {
+      "type": "string",
+      "enum": ["haiku", "sonnet", "opus", "fable"],
+      "description": "Preferred model family. Omit to inherit from the calling agent."
+    },
+    "profile": {
+      "type": "string",
+      "enum": ["minimal", "standard", "full"],
+      "description": "Minimum library profile that includes this skill."
+    },
+    "maturity": {
+      "type": "string",
+      "enum": ["canonical", "experimental", "archived"],
+      "default": "canonical",
+      "description": "canonical = stable, team-vetted; experimental = in trial; archived = superseded."
+    },
+    "origin": {
+      "type": "string",
+      "description": "Source library or author. Use 'kst_promptware' for first-party skills."
+    }
+  }
+}

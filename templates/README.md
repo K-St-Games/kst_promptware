@@ -6,7 +6,9 @@
 
 <!-- STALE CHECK: if Last Verified is more than 6 months old, verify file list and links before treating as authoritative. -->
 
-A minimalist, low-overhead documentation system for AI-assisted software development. This was previously labeled "v3.0" — it is now the single canonical framework. (Earlier versions live in [`/archive`](../archive/).)
+> **Companion-layer notice (2026-06-12):** this v3 session framework now operates as a **companion layer** under the v4 work-order system (codename Boresight) — see [`/charter.md`](../charter.md) and [`/capability-map.md`](../capability-map.md). It remains operational and unchanged for session execution (CONTEXT/PROGRESS/HANDOFF/WORKFLOW). Full integration is deferred — Ledger L-008. The bundle's [`work-order.md`](./work-order.md) template also lives in this directory (Constitution §4.2).
+
+A minimalist, low-overhead documentation system for AI-assisted software development. This was previously labeled "v3.0" — within the session layer it remains the canonical session framework. (Earlier versions live in [`/archive`](../archive/).)
 
 It is opinionated about two things:
 1. **Token footprint** — context files have strict size budgets and trigger-based compaction.

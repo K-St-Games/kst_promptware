@@ -1,19 +1,31 @@
-# AI Agent Dev Docs
+# AI Agent Dev Docs — v4 (codename: Boresight)
 
-Documentation system and templates for AI-assisted software development.
+A specification-first software factory for AI-assisted development: product intent is compiled into bounded, auditable **work orders** whose completion can be validated, escalated, and reconciled without relying on chat memory. The v3 session framework (PM/IC/QA loop, context handoffs) remains operational as a companion layer.
 
 **Cold-start for AI agents:** [`AGENTS.md`](AGENTS.md).
 
 ## Start Here
 
-1. **Read the contribution rules:** [`guides/contributing.md`](guides/contributing.md) — git workflow and PR policy.
-2. **Run a session using the framework:** [`templates/README.md`](templates/README.md) — PM/IC/QA loop, cadence, compaction.
-3. **Progressive deployment patterns:** [`guides/microservice-workflow-guide.md`](guides/microservice-workflow-guide.md) — static → homelab → Docker → GitHub.
-4. **Code style baseline:** [`templates/general-engineering-standards.md`](templates/general-engineering-standards.md).
+1. **Read the vision and glossary:** [`charter.md`](charter.md) — what this system is and the nouns it uses.
+2. **Read the norms:** [`constitution.md`](constitution.md) — mutation rights, state machine, definition of done.
+3. **Find the work:** [`capability-map.md`](capability-map.md) — status surface; orders live in [`work-orders/`](work-orders/).
+4. **Read the contribution rules:** [`guides/contributing.md`](guides/contributing.md) — git workflow and PR policy.
+5. **Run a session using the companion framework:** [`templates/README.md`](templates/README.md) — PM/IC/QA loop, cadence, compaction.
+
+A full README rewrite is queued as WO-0005; this page is the reconciled v4 identity plus the existing docs map.
 
 ---
 
 ## Docs Map
+
+### Work-order system (v4 core)
+
+- [Charter](charter.md) — vision, users, non-goals, glossary, artifact classes.
+- [Constitution](constitution.md) — norms, closed-world reads/writes, state machine, routing rules.
+- [Capability map](capability-map.md) — derived status surface for features and orders.
+- [Ledger](ledger.md) — open questions and deferred decisions.
+- [Work-order template](templates/work-order.md) + [frontmatter schema](schemas/work-order.schema.json).
+- [Changelog](CHANGELOG.md) — framework version history.
 
 ### Operational guides (`guides/`)
 

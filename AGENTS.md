@@ -4,13 +4,12 @@ Cold-start file for AI agents working in this repository. Keep this short — ev
 
 ## What this repo is
 
-A **documentation-only** repository: guides, templates, and protocols for AI-assisted software development. No application code.
+A **documentation-only** repository, v4 (codename Boresight): a specification-first work-order system for agent-executable development, plus the v3 session framework as a companion layer. No application code.
 
-## The one rule that overrides everything
+## The two rules that override everything
 
-**`main` is read-only for agents.** Work happens on feature branches. Merge via PR. Full procedure: [`guides/contributing.md`](guides/contributing.md).
-
-Branch naming: `type/agent-task-description` where type ∈ {`feature`, `fix`, `docs`, `refactor`}.
+1. **`main` is read-only for agents.** Work happens on feature branches. Merge via PR. Full procedure: [`guides/contributing.md`](guides/contributing.md). Branch naming: `type/agent-task-description` where type ∈ {`feature`, `fix`, `docs`, `refactor`}.
+2. **Read [`constitution.md`](constitution.md) before any governed work.** Active work orders live in [`work-orders/`](work-orders/); current status surface is [`capability-map.md`](capability-map.md).
 
 ## Load on demand
 
@@ -18,6 +17,11 @@ Don't read these reflexively — fetch when relevant.
 
 | When you need to… | Read |
 |-------------------|------|
+| Understand vision, glossary, artifact classes | [`charter.md`](charter.md) |
+| Know the norms, state machine, definition of done | [`constitution.md`](constitution.md) |
+| Find active or queued work | [`capability-map.md`](capability-map.md) + [`work-orders/`](work-orders/) |
+| Check open questions / deferred decisions | [`ledger.md`](ledger.md) |
+| Cut a new work order | [`templates/work-order.md`](templates/work-order.md) + [`schemas/work-order.schema.json`](schemas/work-order.schema.json) |
 | Commit, push, open a PR | [`guides/contributing.md`](guides/contributing.md) |
 | Write a tiered spec or roadmap | [`guides/tier-epic-specification-framework.md`](guides/tier-epic-specification-framework.md) |
 | Log architecture decisions | See `architecture-decision-log` skill — lightweight ADR format |
@@ -26,7 +30,6 @@ Don't read these reflexively — fetch when relevant.
 | Quick git commands | [`guides/git_procedures.md`](guides/git_procedures.md) |
 | Deploy a service progressively | [`guides/microservice-workflow-guide.md`](guides/microservice-workflow-guide.md) |
 | Code style / engineering baseline | [`templates/general-engineering-standards.md`](templates/general-engineering-standards.md) |
-| Start a new project using the framework | [`templates/README.md`](templates/README.md) |
 | Run a session (PM / IC / QA loop, cadence, compaction) | [`templates/WORKFLOW.md`](templates/WORKFLOW.md) |
 | Hand off mid-task | [`templates/HANDOFF.md`](templates/HANDOFF.md) |
 | Background research / philosophy | [`references/README.md`](references/README.md) |
@@ -37,16 +40,17 @@ Don't read these reflexively — fetch when relevant.
 /
 ├── AGENTS.md                     # This file — cold-start only
 ├── README.md                     # Human-facing overview
+├── charter.md                    # North star: vision, glossary, artifact classes
+├── constitution.md               # North star: norms, state machine, definition of done
+├── capability-map.md             # Derived status surface
+├── ledger.md                     # Open questions, deferred decisions (append-only)
+├── CHANGELOG.md                  # Framework version history (v01 → v4)
+├── LICENSE                       # MIT
+├── work-orders/                  # Bounded execution units (WO-XXXX.md)
+├── schemas/                      # Frontmatter validation (JSON Schema)
+├── features/  decisions/  playbooks/  commands/   # Bundle directories (filling via WO-0002+)
+├── templates/                    # work-order.md (bundle) + v3 session framework (companion layer)
 ├── guides/                       # Operational protocols (git, deployment)
-├── templates/                    # Canonical framework (was v3.0)
-│   ├── README.md                 # Framework overview
-│   ├── WORKFLOW.md               # PM/IC/QA loop, cadence, compaction
-│   ├── CONTEXT.md                # State + decision log template
-│   ├── PROGRESS.md               # Active sprint template
-│   ├── HANDOFF.md                # Session transition template
-│   ├── general-engineering-standards.md
-│   ├── Devlog_TEMPLATE.md
-│   └── ProjectPlan/
 ├── references/                   # Research, analysis memos — not operational
 ├── technical-suggestions/        # Tech stack recommendations
 └── archive/                      # Deprecated v01/v02 + old framework files
@@ -54,7 +58,7 @@ Don't read these reflexively — fetch when relevant.
 
 ## When docs conflict
 
-[`guides/contributing.md`](guides/contributing.md) wins for git policy. [`templates/WORKFLOW.md`](templates/WORKFLOW.md) wins for session protocol. This file (`AGENTS.md`) wins for top-level rules.
+[`constitution.md`](constitution.md) wins for work-order process norms. [`charter.md`](charter.md) wins for vision and glossary. [`guides/contributing.md`](guides/contributing.md) wins for git policy. [`templates/WORKFLOW.md`](templates/WORKFLOW.md) wins for session protocol. This file (`AGENTS.md`) wins for top-level rules.
 
 ## File naming
 

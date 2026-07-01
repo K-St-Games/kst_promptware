@@ -17,6 +17,7 @@ This folder contains research and non-operational documentation. These files inf
 | [`agent-orchestrator-long-term-proposal.md`](agent-orchestrator-long-term-proposal.md) | Technical proposal | Runtime adapters, control plane, project cartridge, staged automation | High |
 | [`agent-orchestrator-spec.md`](agent-orchestrator-spec.md) | Formal spec | Tier 1 orchestrator packet, fixed seam, gates, role contracts, manual-pilot plan | High |
 | [`agent-orchestrator-roadmap.md`](agent-orchestrator-roadmap.md) | Roadmap | Tiers 2–4: thin CLI, runtime adapters, GitHub/cartridge, policy autonomy | High |
+| [`ponytail-patterns.md`](ponytail-patterns.md) | Adapted pattern reference | Code-size ladder, one-check rule, ceiling comments, root-cause fix — extracted from ponytail (DietrichGebert, MIT) | Medium |
 
 ## Usage
 

@@ -20,7 +20,7 @@ This folder contains research and non-operational documentation. These files inf
 | [`ponytail-patterns.md`](ponytail-patterns.md) | Adapted pattern reference | Code-size ladder, one-check rule, ceiling comments, root-cause fix — extracted from ponytail (DietrichGebert, MIT) | Medium |
 | [`repo-review-070326.md`](repo-review-070326.md) | Review memo | Full-repo review: harness-facing install defects, drift/duplication, token economics, rigidity vs. harness leverage; prioritized punch list | High |
 | [`solo-profile-proposal-070326.md`](solo-profile-proposal-070326.md) | Technical proposal | Solo Baseline profile (v1): harness-neutral doc set (AGENTS/STATE/PROJECT/CONVENTIONS/REVIEWS) for solo multi-agent development with a guest-reviewer lane; extended by the planning-cascade proposal | High |
-| [`planning-cascade-proposal-070326.md`](planning-cascade-proposal-070326.md) | Technical proposal | Solo workflow standard v2: six-altitude planning cascade (vision → tiers → phase → weekly → spec → state) with Serves-chain alignment headers, compaction-recovery protocol, dated weekly close-outs, and two spec weights; templates included | High |
+| [`planning-cascade-proposal-070326.md`](planning-cascade-proposal-070326.md) | Technical proposal | Solo workflow standard v2.1: four core planning altitudes with required steering sections (exit criteria, evidence close-outs, do-not-start/do-not-reopen fences), trigger-gated machinery (state card, docs index, tiers), two spec weights; revised after multi-repo review | High |
 
 ## Usage
 

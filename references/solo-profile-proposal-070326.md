@@ -2,7 +2,7 @@
 
 > **Filed:** 2026-07-03
 > **Author:** Claude Code review session, commissioned by Doomien
-> **Status:** Draft for review — promotes to `profiles/` on ratification
+> **Status:** Draft for review — promotes to `profiles/` on ratification. **Extended by [`planning-cascade-proposal-070326.md`](planning-cascade-proposal-070326.md) (v2)**, which adds the vision→phase→weekly→spec planning layer and revises §3 (STATE.md) for product repos; this v1 remains the floor for small tools and experiments.
 > **Scope:** Replaces `profiles/minimal.md` as the default starting profile for real projects
 > **Target user:** A solo developer running multiple agents across multiple harnesses, who occasionally invites one collaborator whose agents review and suggest improvements
 > **Companion:** implements the applicable recommendations from `repo-review-070326.md` (§1.1–1.2, §3.1–3.5, §4.1)

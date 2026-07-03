@@ -19,6 +19,7 @@ This folder contains research and non-operational documentation. These files inf
 | [`agent-orchestrator-roadmap.md`](agent-orchestrator-roadmap.md) | Roadmap | Tiers 2–4: thin CLI, runtime adapters, GitHub/cartridge, policy autonomy | High |
 | [`ponytail-patterns.md`](ponytail-patterns.md) | Adapted pattern reference | Code-size ladder, one-check rule, ceiling comments, root-cause fix — extracted from ponytail (DietrichGebert, MIT) | Medium |
 | [`repo-review-070326.md`](repo-review-070326.md) | Review memo | Full-repo review: harness-facing install defects, drift/duplication, token economics, rigidity vs. harness leverage; prioritized punch list | High |
+| [`solo-profile-proposal-070326.md`](solo-profile-proposal-070326.md) | Technical proposal | Solo Baseline profile: harness-neutral doc set (AGENTS/STATE/PROJECT/CONVENTIONS/REVIEWS) for solo multi-agent development with a guest-reviewer lane; drop-in templates included | High |
 
 ## Usage
 

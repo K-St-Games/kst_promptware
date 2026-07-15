@@ -1,9 +1,13 @@
 # PM Export Feature Feedback
 
-**Owner:** Docs maintainer  
-**Status:** Review feedback — changes recommended before adapter implementation  
-**Reviewed:** 2026-07-14  
-**Scope:** `skills/pm-export/SKILL.md`, `schemas/pm-export.schema.json`, `pm/pm-export.json`, and `pm/README.md` at `02f8374`  
+**Owner:** Docs maintainer
+
+**Status:** Review feedback — changes recommended before adapter implementation
+
+**Reviewed:** 2026-07-14
+
+**Scope:** `skills/pm-export/SKILL.md`, `schemas/pm-export.schema.json`, `pm/pm-export.json`, and `pm/README.md` at `02f8374`
+
 **Classification:** Non-operational reference memo; the linked skill and schema remain authoritative
 
 ## Assessment

@@ -1,0 +1,803 @@
+{
+  "schema": "pm-export/v0.1",
+  "generated_from": {
+    "commit": "3cf9498",
+    "at": "2026-07-15T00:00:00Z",
+    "sources": [
+      "work-orders/WO-0001.md",
+      "capability-map.md",
+      "ledger.md"
+    ]
+  },
+  "status_model": "Constitution §8 work-order states + capability-map markers (queued, delivered) + ledger statuses (open, resolved, archived). Target-tool status mapping lives in skills/pm-export/SKILL.md.",
+  "items": [
+    {
+      "id": "F-001",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-001"
+      },
+      "title": "BOOTSTRAP",
+      "body": "Repo foundation: north-star artifacts + work-order machinery (brownfield v4). Realized by WO-0001.",
+      "status": "review",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:f86d1ce0ebe23c8e0fd759ba8f885c523ad04fed9e52283d904aba7e8a8ac339",
+      "native": {}
+    },
+    {
+      "id": "F-002",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-002"
+      },
+      "title": "Artifact templates",
+      "body": "Charter, constitution, domain-model, contracts, capability-map, feature, ADR, ledger templates — each with a governance header + authoring instructions. Planned work order: WO-0002 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:1d247924880fe2539c6f08cce9c0093aeb9fdcfa9bb8d5a093e3f14ef329cf34",
+      "native": {}
+    },
+    {
+      "id": "F-003",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-003"
+      },
+      "title": "Schemas",
+      "body": "Feature and capability-map frontmatter schemas. Planned work order: WO-0003 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:5cdaea25ea26adbbc52c2f5fb545510d81af662bdf1505c847dd60978c229b5e",
+      "native": {}
+    },
+    {
+      "id": "F-004",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-004"
+      },
+      "title": "Playbooks & commands",
+      "body": "Intake, specification, implementation, verification/repair, and change-order playbooks & commands. Planned work order: WO-0004 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:9a302cd24671255ed3c39ee6ea757ae841408e88572fd964cbd97db2a35588a8",
+      "native": {}
+    },
+    {
+      "id": "F-005",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-005"
+      },
+      "title": "README & design notes",
+      "body": "Full README rewrite + lineage essay (stepwise refinement, AV/construction work orders, Ansible, CI/CD). Planned work order: WO-0005 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:a886b11b560c5484e91ca562eef04a962ca071d227c0419fe0bc97fe7c7f25b5",
+      "native": {}
+    },
+    {
+      "id": "F-006",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-006"
+      },
+      "title": "Worked example",
+      "body": "Candidate: promote this bootstrap's own artifacts to /examples/. Planned work order: WO-0006 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:14753d65f8155d79a9461be90a8fc2368a2ee69dc73d4d6f05ec2083e1277e45",
+      "native": {}
+    },
+    {
+      "id": "F-007",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-007"
+      },
+      "title": "Adapter shims",
+      "body": "CLAUDE.md + Copilot instruction templates; pointers only, one screen max. Planned work order: WO-0007 (not yet cut).",
+      "status": "queued",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:efed03d74489feeaf23f7bad055cbd9f23f9a939fb7461942826a963933a7f23",
+      "native": {}
+    },
+    {
+      "id": "F-008",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-008"
+      },
+      "title": "Common rules",
+      "body": "6 always-apply rule files in rules/common/. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:c364f237426b30df48147567535fd446ac657facb767e0158b53502c7d0129f7",
+      "native": {}
+    },
+    {
+      "id": "F-009",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-009"
+      },
+      "title": "Language rule stubs",
+      "body": "TypeScript, Python, Go rule stubs in rules/<lang>/. Delivered outside the work-order system (Ledger L-011); stubs unpopulated (L-013).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:59e9843a7a34b4e7026a14a0f6108b8e215637dbdc09bc9131fcd4f85dc3cc24",
+      "native": {}
+    },
+    {
+      "id": "F-010",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-010"
+      },
+      "title": "Development agents",
+      "body": "5 subagent definitions in agents/: architect, code-reviewer, security-reviewer, spec-miner, silent-failure-hunter. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:2fd71faf38b98bf8eb1827a9f4bd6b50172a7393323cc65fc95783ce268d06c7",
+      "native": {}
+    },
+    {
+      "id": "F-011",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-011"
+      },
+      "title": "Governance agents",
+      "body": "3 subagent definitions in agents/: planner, builder, gatekeeper. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:7890d429586f6b1d4b487b28a663ee73a303511c8ea827efc4e664d6206e40b0",
+      "native": {}
+    },
+    {
+      "id": "F-012",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-012"
+      },
+      "title": "Skills",
+      "body": "7 invokable skills in skills/ (initial batch): ADR, multi-agent exploration, project philosophy, work-order intake, deep research, code review, session handoff. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:86a1faa05a3f7cf79afabe91bbb97df61da3c0f814773a6e95fb5905807db7a3",
+      "native": {}
+    },
+    {
+      "id": "F-013",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-013"
+      },
+      "title": "Installation profiles",
+      "body": "3 manifests in profiles/: Minimal, Standard, Full. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:487bddf2bb1f2ca5285048675598029caf9e0a1a479525e7f63ae97e777c4c71",
+      "native": {}
+    },
+    {
+      "id": "F-014",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-014"
+      },
+      "title": "Agent + skill schemas",
+      "body": "schemas/agent.schema.json, schemas/skill.schema.json. Delivered outside the work-order system (Ledger L-011).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:65b44533389ea488c70bbb64a10620a8c9ab2fcf7e2694f3f565f8d333ec1aad",
+      "native": {}
+    },
+    {
+      "id": "F-015",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-015"
+      },
+      "title": "Validation playbook + WO clarifications",
+      "body": "playbooks/validation-checklist.md closeout checklist + clarifications frontmatter field on templates/work-order.md (v0.3.0). Delivered by lightweight path (Ledger L-014).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "relates_to",
+          "id": "L-014"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:191c4d03136227675b93372bf279714d8028ae2a545df12af75adb7b9e2e5ea4",
+      "native": {}
+    },
+    {
+      "id": "F-016",
+      "kind": "epic",
+      "source": {
+        "path": "capability-map.md",
+        "artifact_class": "Capability Map",
+        "anchor": "F-016"
+      },
+      "title": "PM export",
+      "body": "pm-export skill + schemas/pm-export.schema.json + derived pm/pm-export.json — tool-agnostic projection of work orders, features, and ledger for external trackers. Delivered by lightweight path (Ledger L-015).",
+      "status": "delivered",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:library-layer"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "relates_to",
+          "id": "L-015"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:1b5155a2baded33323eb26a39859acd13e98ecc639994cf0e7108f44efc97543",
+      "native": {}
+    },
+    {
+      "id": "WO-0001",
+      "kind": "task",
+      "source": {
+        "path": "work-orders/WO-0001.md",
+        "artifact_class": "Work Order",
+        "anchor": "WO-0001"
+      },
+      "title": "Foundation — Boresight v4 bootstrap; north-star artifacts + work-order machinery",
+      "body": "Establishes Boresight as v4 of the AI_Agent_Dev_Docs repository — north-star artifacts, work-order machinery, and reconciliation of existing v3 content into a companion layer. On completion, every subsequent unit of work can be specified, executed, and verified using the system's own machinery. Status: review — awaiting AC-12 (human ratification of charter + constitution) before review → complete. Spawns WO-0002…WO-0007 (queued, not yet cut).",
+      "status": "review",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "capability:self-hosting-bundle",
+        "tier:builder",
+        "gate:human"
+      ],
+      "parent": "F-001",
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:d8444c1f73359dcd5cff4238a456041211c550eaf0f6af2fb263a7d854cec658",
+      "native": {
+        "work_order": {
+          "assignee_tier": "builder",
+          "gate": "human",
+          "depends_on": [],
+          "conflicts": [],
+          "spawns": [
+            "WO-0002",
+            "WO-0003",
+            "WO-0004",
+            "WO-0005",
+            "WO-0006",
+            "WO-0007"
+          ]
+        }
+      }
+    },
+    {
+      "id": "L-001",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-001"
+      },
+      "title": "Bootstrap paradox",
+      "body": "**Bootstrap paradox.** WO-0001 predates the schema and capability map that govern it. Resolved: AC-3 passed retroactively (WO-0001 frontmatter validates against `schemas/work-order.schema.json`; evidence in `/work-orders/WO-0001.md`).",
+      "status": "resolved",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:29731dfbed9732c14918a7cce9b2cf6cbd57695a6ca9f3a3b638c53a4b528b5a",
+      "native": {}
+    },
+    {
+      "id": "L-002",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-002"
+      },
+      "title": "Project name",
+      "body": "**Project name.** \"Boresight\" ratified 2026-06-12 as production codename only; codename-neutrality constraint (Constitution §1.3) binds. Public release name deferred. Candidates: Keel, Jig, codejig — also candidates as module names.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger",
+        "status:partial"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:dcba768c562d886f55bc31f33b3dc8b2fdc46fbccd2c35484aafdf1b2e801c21",
+      "native": {}
+    },
+    {
+      "id": "L-003",
+      "kind": "question",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-003"
+      },
+      "title": "Status derivation",
+      "body": "**Status derivation.** Generated vs. hand-maintained capability map deferred past v0.1. Hand-maintained for now; status canon (Constitution §3) still binds.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:32ee5b4c679aa2a4970ed618389c41a16c5edc2af64888337bd8af7f0664e9f7",
+      "native": {}
+    },
+    {
+      "id": "L-004",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-004"
+      },
+      "title": "Model-tier routing config format",
+      "body": "**Model-tier routing config format.** Tier names stay abstract in v0.1; concrete model pins live in harness adapters, never in work orders.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:b4aa7922687e5da778bc7263fd176469b657d771bcdea3202e834984b0577f79",
+      "native": {}
+    },
+    {
+      "id": "L-005",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-005"
+      },
+      "title": "Role-filtered \"compiled\" context views",
+      "body": "**Role-filtered \"compiled\" context views.** Deferred; section structure serves as the role filter for now.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:9486af403ae969fd2b584dae70694da9396afbe46e89469bfeb0ad03cb4cd6a5",
+      "native": {}
+    },
+    {
+      "id": "L-006",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-006"
+      },
+      "title": "Adapter auto-generation (`factory sync`)",
+      "body": "**Adapter auto-generation (`factory sync`).** Deferred to v0.2; WO-0007 ships hand-authored shim templates.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:12c6293317ecedbafc99504688f62cf1ccd7e57dae718a3d1b96286200e6d160",
+      "native": {}
+    },
+    {
+      "id": "L-007",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-007"
+      },
+      "title": "Gatekeeper validator deferred to a later maturity tier, against two peer-review recommendations (htf-coder §4, codex §2.7) — deliberate decision 2026-06-12. v0.1 schema validation is a one-off manual run recorded in evidence blocks. Revisit when work-order volume or parallel work justifies standing automation.",
+      "body": "**Gatekeeper validator deferred** to a later maturity tier, against two peer-review recommendations (htf-coder §4, codex §2.7) — deliberate decision 2026-06-12. v0.1 schema validation is a one-off manual run recorded in evidence blocks. Revisit when work-order volume or parallel work justifies standing automation.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "relates_to",
+          "id": "F-015"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:351111e52b46208c673631151abefbbbe82a6eb86edb26e1d4fb57a26de30637",
+      "native": {}
+    },
+    {
+      "id": "L-008",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-008"
+      },
+      "title": "v3 session-layer integration",
+      "body": "**v3 session-layer integration.** CONTEXT/PROGRESS/HANDOFF/WORKFLOW remain a companion layer. Full integration (run-records, playbook conversion, `/templates` reorg) deferred to a later development stage; until then `/templates` is shared (Constitution §4.2).",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:0049fd8401836ccaad04a158c3e897e86d446e92b669c587976dd883012ab271",
+      "native": {}
+    },
+    {
+      "id": "L-009",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-009"
+      },
+      "title": "Deferred template features per codex review: Semantic Versioning of Intent, cost-estimation fields, specialized-reviewer routing (`review_requirements`), hermeticity constraints beyond the `infra_block` trigger. Revisit with real run-record data.",
+      "body": "**Deferred template features** per codex review: Semantic Versioning of Intent, cost-estimation fields, specialized-reviewer routing (`review_requirements`), hermeticity constraints beyond the `infra_block` trigger. Revisit with real run-record data.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:e817420800a4da5904fbdf1eed4609da4407a4d30d913c1f55ecd086480e02e0",
+      "native": {}
+    },
+    {
+      "id": "L-010",
+      "kind": "question",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-010"
+      },
+      "title": "New artifact classes (Rule, Skill, Agent, Profile) pending charter enumeration",
+      "body": "**New artifact classes (Rule, Skill, Agent, Profile) pending charter enumeration.** The charter's fixed artifact-class list does not include these four classes (created 2026-06-16 as part of the library layer). Governance headers for these artifacts use nearest-fit existing classes with a parenthetical note. Charter amendment via change order required to make these classes official. Blocked on AC-12 (WO-0001 human gate) before charter can be amended.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "depends_on",
+          "id": "WO-0001"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:772bf0c3ff029ba09d2f582bdf0d46fe0f313378599bcf7dd58266e471d6db77",
+      "native": {}
+    },
+    {
+      "id": "L-011",
+      "kind": "question",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-011"
+      },
+      "title": "Work-order coverage gap for library layer (F-008–F-013)",
+      "body": "**Work-order coverage gap for library layer (F-008–F-013).** The promptware library layer (rules, agents, skills, profiles, schemas) was created without governing work orders. Constitution §8 requires work orders for governed artifacts. Gap noted; options: (a) retroactive work orders, (b) change order formalizing a \"lightweight path\" for library additions. Revisit when library stabilizes.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:c2bc5a6bf4f64d861bb4790c7abda9fa6a78b59cafcd217dacd4a04fc8506220",
+      "native": {}
+    },
+    {
+      "id": "L-012",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-012"
+      },
+      "title": "Model pinning in agent frontmatter",
+      "body": "**Model pinning in agent frontmatter.** Agent definitions in `agents/` intentionally omit `model:` field, consistent with L-004 (model pins belong in harness adapters). The `model` field is available in `schemas/agent.schema.json` for downstream consumers to populate. Revisit if Claude Code's default model resolution behavior changes.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:40fd02157c5c3b2ba4ce0cc52a3231d8ae3d0fa69f90054d306dae689581a1d9",
+      "native": {}
+    },
+    {
+      "id": "L-013",
+      "kind": "question",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-013"
+      },
+      "title": "Language rule stubs are unpopulated",
+      "body": "**Language rule stubs are unpopulated.** `rules/typescript/README.md`, `rules/python/README.md`, `rules/go/README.md` are valid stubs but contain placeholder sections rather than authoritative conventions. Each downstream project should extend them with project-specific content. A future work order should decide whether kst_promptware ships opinionated defaults or only structure for these stubs.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:f141f0c7c62431fc13a3cf2bc088bb41ddeb7fbd795ebe24b045f4d258f311d3",
+      "native": {}
+    },
+    {
+      "id": "L-014",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-014"
+      },
+      "title": "Validation playbook + WO clarifications field delivered without a work order",
+      "body": "**Validation playbook + WO clarifications field delivered without a work order.** `playbooks/validation-checklist.md` (merging `references/enhancement-proposal-062126.md` proposals #2 + #5) and a `clarifications` frontmatter field on `templates/work-order.md` (frontmatter-only variant of proposal #1 — no state-machine or constitution change) were delivered 2026-06-21 by direct human authorization, consistent with the L-011 lightweight-path precedent; no work order or change order was cut. `templates/work-order.md` bumped v0.2.0 → v0.3.0; `schemas/work-order.schema.json` gained an optional `clarifications` property. This formalizes but does not resolve L-007 — the checklist is the structured manual step L-007 anticipated; standing automation is still deferred. Proposals #3 (convergence assessment), #4 (adapter shims), and #6 (override hierarchy) from the same enhancement proposal were deliberately held back.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "relates_to",
+          "id": "F-015"
+        },
+        {
+          "type": "relates_to",
+          "id": "L-007"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:264e36c71e15beddc3211df325e8456b37691a3f73ef702a572887be30ffd086",
+      "native": {}
+    },
+    {
+      "id": "L-015",
+      "kind": "decision",
+      "source": {
+        "path": "ledger.md",
+        "artifact_class": "Ledger",
+        "anchor": "L-015"
+      },
+      "title": "Tool-agnostic PM export delivered without a work order",
+      "body": "**Tool-agnostic PM export delivered without a work order.** The `pm-export` skill (`skills/pm-export/SKILL.md`), its output contract (`schemas/pm-export.schema.json`), and the derived export (`pm/pm-export.json` + `pm/README.md`) were delivered 2026-07-15 by direct human authorization, consistent with the L-011 / L-014 lightweight-path precedent; no work order or change order was cut. The export is a *derived* projection of `work-orders/`, `capability-map.md`, and `ledger.md` into a tool-neutral issue model — docs stay canonical (§3), regeneration replaces it, and the only state it holds beyond the docs is `external_ids` (per-tool sync ids). First concrete sync target is GitHub Issues; the neutral core is unchanged for Linear or Jira. Artifact-class note: `pm/pm-export.json` and `pm/README.md` use nearest-fit classes (derived index) pending the same charter-enumeration path as the Rule/Skill/Agent/Profile classes (L-010). The skill ships `maturity: experimental`. Capability map gains F-016.",
+      "status": "open",
+      "priority": null,
+      "estimate": null,
+      "labels": [
+        "ledger"
+      ],
+      "parent": null,
+      "relations": [
+        {
+          "type": "relates_to",
+          "id": "F-016"
+        }
+      ],
+      "assignee": null,
+      "external_ids": {},
+      "source_hash": "sha256:dd8a421f1e79319bd49352378ff8baf1056c61cec982a89eff7ac06901cc8277",
+      "native": {}
+    }
+  ]
+}

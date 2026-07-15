@@ -22,6 +22,7 @@ Don't read these reflexively — fetch when relevant.
 | Find active or queued work | [`capability-map.md`](capability-map.md) + [`work-orders/`](work-orders/) |
 | Check open questions / deferred decisions | [`ledger.md`](ledger.md) |
 | Cut a new work order | [`templates/work-order.md`](templates/work-order.md) + [`schemas/work-order.schema.json`](schemas/work-order.schema.json) |
+| Validate a work order before closeout | [`playbooks/validation-checklist.md`](playbooks/validation-checklist.md) |
 | Commit, push, open a PR | [`guides/contributing.md`](guides/contributing.md) |
 | Write a tiered spec or roadmap | [`guides/tier-epic-specification-framework.md`](guides/tier-epic-specification-framework.md) |
 | Log architecture decisions | [`skills/architecture-decision-records/SKILL.md`](skills/architecture-decision-records/SKILL.md) — invoke as `/architecture-decision-records` |
@@ -41,6 +42,7 @@ Don't read these reflexively — fetch when relevant.
 | Research and synthesize a topic | [`skills/deep-research/SKILL.md`](skills/deep-research/SKILL.md) |
 | Write a structured code review | [`skills/code-review/SKILL.md`](skills/code-review/SKILL.md) |
 | Write a session handoff | [`skills/session-handoff/SKILL.md`](skills/session-handoff/SKILL.md) |
+| Export repo status to a PM tool (GitHub Issues / Linear / Jira) | [`skills/pm-export/SKILL.md`](skills/pm-export/SKILL.md) |
 
 ## Repository structure
 
@@ -56,6 +58,7 @@ Don't read these reflexively — fetch when relevant.
 ├── LICENSE                       # MIT
 ├── work-orders/                  # Bounded execution units (WO-XXXX.md)
 ├── schemas/                      # Frontmatter validation (JSON Schema)
+├── pm/                           # Tool-agnostic PM export (derived from governance docs)
 ├── features/  decisions/  playbooks/  commands/   # Bundle directories (filling via WO-0002+)
 ├── templates/                    # work-order.md (bundle) + v3 session framework (companion layer)
 ├── guides/                       # Operational protocols (git, deployment)

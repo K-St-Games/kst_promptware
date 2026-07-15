@@ -143,3 +143,24 @@ spec-driven development · spec-as-source · context engineering · agent skills
 ---
 
 > **Next steps:** Consider feeding selected sources into the constitution as research references or ledger entries. The configuration smells paper is especially relevant for designing lint/validation into the work-order lifecycle.
+
+---
+
+## Verification Addendum
+
+> **Filed:** 2026-06-21
+> **By:** Claude (builder tier), at Damien's request
+> **Method:** Targeted web search against the claims most likely to be fabricated — specific arXiv IDs, precise statistics, and unfamiliar tool names. Well-established industry concepts (Spec Kit, Kiro, BMAD, OpenSpec, Tessl, AGENTS.md/CLAUDE.md, Codex Skills, OpenHands, SWE-agent, MCP, BDD/Gherkin, OpenAPI, ADRs, TLA+/Alloy) were not re-checked — independently corroborated as real, current systems already.
+
+| Claim | Verdict | Detail |
+|---|---|---|
+| arXiv:2503.02400 "Promptware Engineering" | **Confirmed** | Real paper, accepted ACM TOSEM. Authors: Chen, Wang, Sun, Liu, Zhang, Liu. |
+| arXiv:2601.08815 "Agent Contracts" | **Confirmed** | Real paper, accepted COINE 2026 (co-located with AAMAS 2026). Authors: Qing Ye, Jing Tan. |
+| Config-smells stats — Lint Leakage 62% / Context Bloat 42% / Skill Leakage 35% | **Confirmed accurate** | Real June 2026 paper, "Configuration Smells in AGENTS.md Files." Widely covered (The Register, InfoWorld, dev.ua); 91 of 100 sampled repos had at least one smell. |
+| Cloudflare "Pi Harness" / "Durable Streams" | **Confirmed, loosely named** | Flue (Cloudflare's framework) generates markdown blueprints; Pi (from "Project Think") is the harness Cloudflare features; Durable Streams is a real append-only execution-log pattern in Cloudflare Pipelines. "Pi Harness" isn't Cloudflare's own product name for Pi, but the substance holds. |
+| ZeroClaw / Hermes | **Confirmed** | Both real, current agent harnesses. ZeroClaw: Rust runtime, 20k+ GitHub stars. Hermes (Nous Research): markdown-based skill memory under `~/.hermes/skills/`, agentskills.io-compatible. |
+| "6 Levels of AI Delegation" | **Confirmed** | Real framework (metaltoad.com); correctly described here as a practitioner framework, not an academic paper. |
+| Margaret-Anne Storey, Triple Debt Model / intent debt | **Confirmed, attribution included** | arXiv:2603.22106, "From Technical Debt to Cognitive and Intent Debt." Storey is the author (self-published companion post at margaretstorey.com, Feb 2026; also covered in ACM Queue). |
+| "Software Delegation Contracts: Measuring Reviewability in AI Coding-Agent Work" | **Not found under this title** | No paper matching this exact title and finding (null result on correctness; positive result on reviewability, evidence sufficiency, residual-risk reporting) turned up. Adjacent real papers exist — "Adaptive Contracts for Cost-Effective AI Delegation" (arXiv:2603.17212, cost-focused), "Agent Behavioral Contracts" (arXiv:2602.22302, compositional-verification-focused), "Delegation and Verification Under AI" (arXiv:2603.02961, unconfirmed abstract) — but none confirmed as an exact match. **Treat this citation as unverified** until re-traced; the underlying claim is plausible and consistent with the rest of the survey, but shouldn't be cited by title without re-confirming. |
+
+**Net assessment:** the synthesis is substantively reliable — 7 of 8 spot-checked claims confirmed, including the ones that read most suspiciously on a first pass (precise percentages, unfamiliar product names). One citation (the delegation-contracts reviewability paper) could not be traced and should not be treated as load-bearing until re-confirmed.

@@ -39,6 +39,8 @@ Selectable rules, skills, agents, and profiles that downstream projects copy and
 | F-012 Skills | 7 invokable skills in `skills/`: ADR, multi-agent exploration, project philosophy, work-order intake, deep research, code review, session handoff | — | `delivered` |
 | F-013 Installation profiles | 3 manifests in `profiles/`: Minimal, Standard, Full | — | `delivered` |
 | F-014 Agent + skill schemas | `schemas/agent.schema.json`, `schemas/skill.schema.json` | — | `delivered` |
+| F-015 Validation playbook + WO clarifications | `playbooks/validation-checklist.md` closeout checklist + `clarifications` frontmatter field on `templates/work-order.md` (v0.3.0) | — | `delivered` |
+| F-016 PM export | `pm-export` skill + `schemas/pm-export.schema.json` + derived `pm/pm-export.json` — tool-agnostic projection of work orders, features, and ledger for external trackers | — | `delivered` |
 
 ## Companion Layer (not bundle-governed)
 

@@ -25,6 +25,7 @@ A full README rewrite is queued as WO-0005; this page is the reconciled v4 ident
 - [Capability map](capability-map.md) — derived status surface for features and orders.
 - [Ledger](ledger.md) — open questions and deferred decisions.
 - [Work-order template](templates/work-order.md) + [frontmatter schema](schemas/work-order.schema.json).
+- [Validation playbook](playbooks/validation-checklist.md) — closeout checklist for `review → complete`.
 - [Changelog](CHANGELOG.md) — framework version history.
 
 ### Operational guides (`guides/`)
@@ -49,12 +50,12 @@ Selectable components for downstream projects. Install via one of three profiles
 
 - [**Minimal**](profiles/minimal.md) — 2 rules + 1 skill + HANDOFF.md + AGENTS.md template. For single-agent, low-overhead projects.
 - [**Standard**](profiles/standard.md) — All common rules + full v3 session suite + 2 agents + 4 skills. For ongoing AI-assisted development.
-- [**Full**](profiles/full.md) — Everything + Boresight governance bundle + all 8 agents + all 7 skills. For specification-first, multi-agent projects.
+- [**Full**](profiles/full.md) — Everything + Boresight governance bundle + all 8 agents + all 8 skills. For specification-first, multi-agent projects.
 
 **Catalog:**
 - [Rules library](rules/README.md) — Always-apply guidelines. `rules/common/` (6 files) + language stubs (TypeScript, Python, Go).
 - [Agents library](agents/README.md) — 8 curated Claude Code subagent definitions: 5 development agents (architect, code-reviewer, security-reviewer, spec-miner, silent-failure-hunter) + 3 governance agents (planner, builder, gatekeeper).
-- [Skills library](skills/README.md) — 7 invokable skills: ADR, multi-agent design exploration, project philosophy, work-order intake, deep research, code review, session handoff.
+- [Skills library](skills/README.md) — 8 invokable skills: ADR, multi-agent design exploration, project philosophy, work-order intake, deep research, code review, session handoff, PM export.
 - [Schemas](schemas/) — `skill.schema.json`, `agent.schema.json` (in addition to `work-order.schema.json`).
 
 ### Technical suggestions (`technical-suggestions/`)

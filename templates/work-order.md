@@ -1,6 +1,6 @@
 # WO-XXXX — *<Title: imperative and outcome-shaped — "Make X possible," not "Work on X">*
 
-> **Artifact class:** Work Order — Template v0.2.0
+> **Artifact class:** Work Order — Template v0.3.0
 > **Written by:** Planner tier
 > **Amended by:** Change order only, once status = `released` (free edits while `draft`)
 > **Read by:** Builder at execution; Gatekeeper at closeout; Human at declared gates
@@ -23,6 +23,8 @@ status: draft            # legal: draft → released → in-progress → (blocke
                          #   blocked → draft        (change order required; revise, then re-release)
                          #   blocked → aborted      (fatal; revert or checkpoint writes, ledger the reason)
                          # aborted → reconciled     (after rollback; closeout artifact obligations waived except ledger)
+clarifications: []       # optional — ambiguities surfaced while drafting; each entry: {question, resolution, status: open|resolved}
+                         # an order with any `open` entry should not pass draft → released (§9.1 exit condition)
 assignee_tier: builder   # builder | planner | architect — the lowest tier that can complete the work
 gate: human              # transitions requiring human sign-off; minimum: draft → released
 parent_feature: !!FEATURE-ID!!  # feature id on the capability map; every order has exactly one parent

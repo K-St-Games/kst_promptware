@@ -109,3 +109,21 @@ Schema validity should not be treated as adapter readiness until the semantic an
 3. Regenerate the sample export under the revised contract.
 4. Implement a minimal GitHub Issues adapter as the proving consumer.
 5. Run create, no-op, update, deletion, interrupted-push, and duplicate-recovery scenarios before promoting the skill from `experimental`.
+
+## Resolution Addendum
+
+**Addressed:** 2026-07-15, by direct authorization following this review. Covers steps 1–3 of the sequence above; steps 4–5 (the adapter and its scenario tests) remain future work.
+
+| Finding | Disposition |
+|---|---|
+| P1 — no durable per-target checkpoint | **Fixed as recommended.** `external_ids` replaced by `sync: {target: {external_id, last_pushed_hash, closed}}`. Dirtiness is now per target (`source_hash != sync[T].last_pushed_hash`), not global. |
+| P1 — vanished-source handling ambiguous | **Fixed as recommended.** Added `present: false` as a tombstone flag; a vanished item with prior sync state is retained (frozen title/body/status) until every target's `sync` entry reaches `closed: true`, then dropped. An item never synced anywhere is dropped immediately, no tombstone. |
+| P2 — schema weaker than documented contract | **Fixed, with one deliberate deviation.** All fields the skill calls "core" are now `required` (explicit `null`/`[]`/`{}` where the source declares nothing), and `source_hash` / `sync[*].last_pushed_hash` now carry the `^sha256:[0-9a-f]{64}$` pattern; `generated_from.at` carries `format: date-time`. Per-`kind` conditional rules (id shape, allowed status subset) were **not** encoded as draft-07 schema logic — that's more machinery than this docs-only, no-build-step repo should carry as a bundle dependency (Constitution §1.2). They're implemented instead as an explicit semantic-validation checklist in the skill's Step 5, run as a script or by hand rather than baked into the schema. Same coverage, different layer. |
+| P2 — feature-spec extraction underspecified | **Resolved by removal, not by specifying.** Took the review's first option: `spec` dropped from the `kind` enum and the item-model table, with an inline note explaining why (no feature-spec artifacts exist anywhere in this repo yet — `features/` is empty). Re-add once a real one exists to model the id/status/parentage scheme against, rather than guessing now. |
+| P2 — governance treatment needs an explicit rule | **Fixed as recommended.** `pm/README.md` now carries a `Validated by` line (schema + the Step 5 semantic checklist) and an explicit statement that `pm-export.json` is generated output governed only through the README and skill, not independently — same posture as the `/LICENSE` exception in Constitution §2.2. |
+| P3 — hash normalization unspecified | **Fixed as recommended.** One normalization rule now applies uniformly to every source-slice type (UTF-8, CRLF→LF, strip trailing whitespace/newline, no addition) — the previous file-vs-row inconsistency is gone. `skills/pm-export/SKILL.md` Step 3 carries the exact algorithm plus three real worked-example hash vectors (one capability-map row, one ledger bullet, the full WO-0001 file) computed against this repo, reproducible by an independent implementation. |
+| P3 — idempotency guarantee overclaimed | **Fixed as recommended.** The GitHub mapping section no longer claims "at most one issue, ever." It now states the marker/id lookup is duplicate *recovery*, names the actual race (two pushers, same uncreated id, before either records `sync.github.external_id`), and recommends serializing pushes per target and canonical id as the way to make the guarantee hard. |
+
+**Schema versioning:** the shape change is breaking (field rename/restructure, `kind` enum narrowed), so per the schema's own versioning note this bumped `pm-export/v0.1` → `v0.2` — not to `v1.0`, since nothing has consumed v0.1 as a stable contract yet (no adapter exists, every `external_ids` in the shipped sample was empty). The schema doc now states the convention explicitly: any shape change stays a minor bump below v1.0; v1.0 is reserved for the first shape a real adapter implements against.
+
+`pm/pm-export.json` was regenerated under the revised contract at the commit introducing these fixes; see that commit and the following one (the regenerated export, stamped with the fix commit's sha) for the applied result.

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "pm-export.schema.json",
-  "$comment": "Governance: written by Builder tier (Claude, 2026-07-15; authorized by Damien — lightweight path, see Ledger L-015). Validates the tool-agnostic project-management export produced by the pm-export skill. The export is DERIVED from governance artifacts (work orders, capability map, ledger); those artifacts stay canonical. Field names and $id are codename-neutral per Constitution §1.3.",
+  "$comment": "Governance: written by Builder tier (Claude, 2026-07-15; authorized by Damien — lightweight path, see Ledger L-015). Revised 2026-07-15 per references/pm-feature-feedback.md (per-target sync state, tombstone handling, required-field tightening, hash-format constraint, spec kind deferred). Validates the tool-agnostic project-management export produced by the pm-export skill. The export is DERIVED from governance artifacts (work orders, capability map, ledger); those artifacts stay canonical. Field names and $id are codename-neutral per Constitution §1.3.",
   "title": "PM Export",
   "type": "object",
   "additionalProperties": false,
@@ -9,8 +9,8 @@
   "properties": {
     "schema": {
       "type": "string",
-      "const": "pm-export/v0.1",
-      "description": "Format identifier and version. Bump the minor on additive field changes; bump the major on breaking ones."
+      "const": "pm-export/v0.2",
+      "description": "Format identifier and version. While below v1.0, treat any shape change (additive or breaking) as a minor bump — v0.1, v0.2, ... — since the contract has no consumer yet to protect. Reserve v1.0 for the first shape a real adapter implements against."
     },
     "generated_from": {
       "type": "object",
@@ -24,6 +24,7 @@
         },
         "at": {
           "type": "string",
+          "format": "date-time",
           "description": "ISO-8601 timestamp of generation. Optional — stamped by the human or harness, not asserted by the skill."
         },
         "sources": {
@@ -49,7 +50,11 @@
     "item": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind", "source", "title", "status"],
+      "required": [
+        "id", "kind", "source", "title", "body", "status", "priority",
+        "estimate", "labels", "parent", "relations", "assignee",
+        "sync", "source_hash", "native"
+      ],
       "properties": {
         "id": {
           "type": "string",
@@ -58,8 +63,8 @@
         },
         "kind": {
           "type": "string",
-          "enum": ["epic", "task", "spec", "question", "decision"],
-          "description": "Item-type discriminator. epic = capability-map feature; task = work order; spec = feature spec; question / decision = ledger entry."
+          "enum": ["epic", "task", "question", "decision"],
+          "description": "Item-type discriminator. epic = capability-map feature; task = work order; question / decision = ledger entry. A 'spec' kind for features/*.md is deliberately deferred — no feature-spec artifacts exist yet in this repo (see skills/pm-export/SKILL.md)."
         },
         "source": {
           "type": "object",
@@ -89,7 +94,7 @@
         },
         "body": {
           "type": "string",
-          "description": "Tool-neutral markdown description. Rendered into the target's description/body field at push time."
+          "description": "Tool-neutral markdown description. Rendered into the target's description/body field at push time. Required — use an empty string if the source has no narrative content, never omit."
         },
         "status": {
           "type": "string",
@@ -108,7 +113,7 @@
             "resolved",
             "archived"
           ],
-          "description": "Canonical status. Work-order lifecycle (Constitution §8) + capability-map markers (queued, delivered) + ledger statuses (open, resolved, archived). Target tools translate this via the per-tool mapping table in skills/pm-export/SKILL.md; the export itself stays tool-neutral."
+          "description": "Canonical status. Work-order lifecycle (Constitution §8) + capability-map markers (queued, delivered) + ledger statuses (open, resolved, archived). This union is intentionally broad — the schema does not restrict which statuses are legal for which `kind`; that per-kind subset check (task -> WO states, epic -> queued/delivered/WO states, question|decision -> open/resolved/archived) is a semantic check run by the pm-export skill (Step 5), not schema-encoded, per Constitution §1.2 (validators are conveniences, not bundle dependencies). Target tools translate this via the per-tool mapping table in skills/pm-export/SKILL.md; the export itself stays tool-neutral."
         },
         "priority": {
           "type": ["string", "null"],
@@ -122,11 +127,11 @@
         "labels": {
           "type": "array",
           "items": { "type": "string" },
-          "description": "Tool-neutral tags, passed through to the target's label system."
+          "description": "Tool-neutral tags, passed through to the target's label system. Empty array when none apply."
         },
         "parent": {
           "type": ["string", "null"],
-          "description": "Canonical id of the parent item (task → its epic). Null for top-level items."
+          "description": "Canonical id of the parent item (task -> its epic). Null for top-level items. Must be an id present in this export's items (checked by the skill's semantic-validation step, not this schema)."
         },
         "relations": {
           "type": "array",
@@ -143,28 +148,55 @@
               "id": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Canonical id of the related item."
+                "description": "Canonical id of the related item. Must be an id present in this export's items — non-item references belong in `body`, not here (checked by the skill's semantic-validation step, not this schema)."
               }
             }
           },
-          "description": "Typed links to other canonical ids. Targets that lack native relations render these into the body."
+          "description": "Typed links to other canonical ids in this export. Targets that lack native relations render these into the body. Empty array when none apply."
         },
         "assignee": {
           "type": ["string", "null"],
           "description": "Tool-neutral assignee handle. Null when the source names none — resolved to a tool user at push time via a handle map, never invented here."
         },
-        "external_ids": {
+        "sync": {
           "type": "object",
-          "additionalProperties": { "type": ["string", "number"] },
-          "description": "SYNC STATE — the one field the canonical docs do not hold. Maps target tool → the id it assigned on first push (e.g. {\"github\": 42}). Matched by canonical id and PRESERVED across regeneration. Never hand-clobber; losing it orphans the synced item and re-syncing duplicates."
+          "additionalProperties": { "$ref": "#/definitions/syncEntry" },
+          "description": "SYNC STATE — the field the canonical docs do not hold. Keyed by target name (e.g. \"github\"); each value is that target's checkpoint. Matched by canonical id and PRESERVED across regeneration — never hand-clobber. Empty object `{}` means never synced to any target. An adapter updates its own key's `last_pushed_hash` only after a successful write, and its own key's `closed` only after successfully processing a closure — both are the adapter recording its OWN action, not reading the target's state back (the docs -> export -> tool flow stays one-way)."
         },
         "source_hash": {
           "type": ["string", "null"],
-          "description": "Hash of the source slice at generation time. Drives drift detection: if the source changed since the last export, the item is dirty and the pusher should update the target. Null if not computed."
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "description": "Hash of the source slice at generation time, per the normalization spec in skills/pm-export/SKILL.md (UTF-8, CRLF normalized to LF, trailing whitespace/newline stripped, no addition). Drives per-target drift detection: an item is dirty for target T when source_hash != sync[T].last_pushed_hash. Null only if not yet computed."
+        },
+        "present": {
+          "type": "boolean",
+          "default": true,
+          "description": "OPTIONAL — omit when true (the common case: source still exists). Set to false only as a tombstone: the canonical source vanished but the item still has at least one non-empty `sync` entry, so it is retained (with its last-known title/body/status frozen) until every key in `sync` reaches `closed: true`. An item with an empty `sync` object that loses its source is dropped outright, never tombstoned — there is nothing to notify."
         },
         "native": {
           "type": "object",
-          "description": "Escape hatch for source- or target-specific fields with no tool-neutral home, namespaced by owner (e.g. native.work_order). Optional; consumed only by an adapter that recognises the namespace."
+          "description": "Escape hatch for source- or target-specific fields with no tool-neutral home, namespaced by owner (e.g. native.work_order). Required key, but the object itself may be empty ({})."
+        }
+      }
+    },
+    "syncEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["external_id"],
+      "properties": {
+        "external_id": {
+          "type": ["string", "number"],
+          "description": "The id this target assigned on first push (e.g. a GitHub issue number)."
+        },
+        "last_pushed_hash": {
+          "type": ["string", "null"],
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "description": "The item's source_hash as of the last successful write to this target. Compared against the current source_hash to decide whether this target needs an update. Null if the item was registered (e.g. matched by marker) but no push has completed yet."
+        },
+        "closed": {
+          "type": "boolean",
+          "default": false,
+          "description": "Set by this target's adapter after it successfully processes closure of a tombstoned item (present:false). Once every key in an item's sync object has closed:true, the next regeneration drops the item. Omit (defaults false) while open."
         }
       }
     }

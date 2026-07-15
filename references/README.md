@@ -2,7 +2,7 @@
 
 **Owner:** Docs maintainer  
 **Status:** Active  
-**Last Updated:** June 25, 2026  
+**Last Updated:** July 14, 2026
 **Source of Truth:** `references/README.md` for reference classification
 
 This folder contains research and non-operational documentation. These files inform decisions but are not required for day-to-day execution workflow.
@@ -18,6 +18,7 @@ This folder contains research and non-operational documentation. These files inf
 | [`agent-orchestrator-spec.md`](agent-orchestrator-spec.md) | Formal spec | Tier 1 orchestrator packet, fixed seam, gates, role contracts, manual-pilot plan | High |
 | [`agent-orchestrator-roadmap.md`](agent-orchestrator-roadmap.md) | Roadmap | Tiers 2–4: thin CLI, runtime adapters, GitHub/cartridge, policy autonomy | High |
 | [`skills-library-proposal-062526.md`](skills-library-proposal-062526.md) | Technical proposal | Skills-layer design rationale, skill vs rule vs agent boundary, 15-skill expansion roster | High |
+| [`pm-feature-feedback.md`](pm-feature-feedback.md) | Review memo | PM export sync state, deletion semantics, schema strictness, adapter readiness | High |
 
 ## Usage
 

@@ -1,7 +1,7 @@
 {
-  "schema": "pm-export/v0.1",
+  "schema": "pm-export/v0.2",
   "generated_from": {
-    "commit": "3cf9498",
+    "commit": "80ec90f",
     "at": "2026-07-15T00:00:00Z",
     "sources": [
       "work-orders/WO-0001.md",
@@ -30,7 +30,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:f86d1ce0ebe23c8e0fd759ba8f885c523ad04fed9e52283d904aba7e8a8ac339",
       "native": {}
     },
@@ -53,7 +53,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:1d247924880fe2539c6f08cce9c0093aeb9fdcfa9bb8d5a093e3f14ef329cf34",
       "native": {}
     },
@@ -76,7 +76,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:5cdaea25ea26adbbc52c2f5fb545510d81af662bdf1505c847dd60978c229b5e",
       "native": {}
     },
@@ -99,7 +99,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:9a302cd24671255ed3c39ee6ea757ae841408e88572fd964cbd97db2a35588a8",
       "native": {}
     },
@@ -122,7 +122,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:a886b11b560c5484e91ca562eef04a962ca071d227c0419fe0bc97fe7c7f25b5",
       "native": {}
     },
@@ -145,7 +145,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:14753d65f8155d79a9461be90a8fc2368a2ee69dc73d4d6f05ec2083e1277e45",
       "native": {}
     },
@@ -168,7 +168,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:efed03d74489feeaf23f7bad055cbd9f23f9a939fb7461942826a963933a7f23",
       "native": {}
     },
@@ -191,7 +191,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:c364f237426b30df48147567535fd446ac657facb767e0158b53502c7d0129f7",
       "native": {}
     },
@@ -214,7 +214,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:59e9843a7a34b4e7026a14a0f6108b8e215637dbdc09bc9131fcd4f85dc3cc24",
       "native": {}
     },
@@ -237,7 +237,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:2fd71faf38b98bf8eb1827a9f4bd6b50172a7393323cc65fc95783ce268d06c7",
       "native": {}
     },
@@ -260,7 +260,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:7890d429586f6b1d4b487b28a663ee73a303511c8ea827efc4e664d6206e40b0",
       "native": {}
     },
@@ -283,7 +283,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:86a1faa05a3f7cf79afabe91bbb97df61da3c0f814773a6e95fb5905807db7a3",
       "native": {}
     },
@@ -306,7 +306,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:487bddf2bb1f2ca5285048675598029caf9e0a1a479525e7f63ae97e777c4c71",
       "native": {}
     },
@@ -329,7 +329,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:65b44533389ea488c70bbb64a10620a8c9ab2fcf7e2694f3f565f8d333ec1aad",
       "native": {}
     },
@@ -357,7 +357,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:191c4d03136227675b93372bf279714d8028ae2a545df12af75adb7b9e2e5ea4",
       "native": {}
     },
@@ -385,7 +385,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:1b5155a2baded33323eb26a39859acd13e98ecc639994cf0e7108f44efc97543",
       "native": {}
     },
@@ -410,8 +410,8 @@
       "parent": "F-001",
       "relations": [],
       "assignee": null,
-      "external_ids": {},
-      "source_hash": "sha256:d8444c1f73359dcd5cff4238a456041211c550eaf0f6af2fb263a7d854cec658",
+      "sync": {},
+      "source_hash": "sha256:b64f1f9e52dafee4446e7695ee96af47da0acaa96948bc97bd173e6025ca531b",
       "native": {
         "work_order": {
           "assignee_tier": "builder",
@@ -448,7 +448,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:29731dfbed9732c14918a7cce9b2cf6cbd57695a6ca9f3a3b638c53a4b528b5a",
       "native": {}
     },
@@ -472,7 +472,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:dcba768c562d886f55bc31f33b3dc8b2fdc46fbccd2c35484aafdf1b2e801c21",
       "native": {}
     },
@@ -495,7 +495,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:32ee5b4c679aa2a4970ed618389c41a16c5edc2af64888337bd8af7f0664e9f7",
       "native": {}
     },
@@ -518,7 +518,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:b4aa7922687e5da778bc7263fd176469b657d771bcdea3202e834984b0577f79",
       "native": {}
     },
@@ -541,7 +541,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:9486af403ae969fd2b584dae70694da9396afbe46e89469bfeb0ad03cb4cd6a5",
       "native": {}
     },
@@ -564,7 +564,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:12c6293317ecedbafc99504688f62cf1ccd7e57dae718a3d1b96286200e6d160",
       "native": {}
     },
@@ -592,7 +592,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:351111e52b46208c673631151abefbbbe82a6eb86edb26e1d4fb57a26de30637",
       "native": {}
     },
@@ -615,7 +615,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:0049fd8401836ccaad04a158c3e897e86d446e92b669c587976dd883012ab271",
       "native": {}
     },
@@ -638,7 +638,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:e817420800a4da5904fbdf1eed4609da4407a4d30d913c1f55ecd086480e02e0",
       "native": {}
     },
@@ -666,7 +666,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:772bf0c3ff029ba09d2f582bdf0d46fe0f313378599bcf7dd58266e471d6db77",
       "native": {}
     },
@@ -689,7 +689,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:c2bc5a6bf4f64d861bb4790c7abda9fa6a78b59cafcd217dacd4a04fc8506220",
       "native": {}
     },
@@ -712,7 +712,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:40fd02157c5c3b2ba4ce0cc52a3231d8ae3d0fa69f90054d306dae689581a1d9",
       "native": {}
     },
@@ -735,7 +735,7 @@
       "parent": null,
       "relations": [],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:f141f0c7c62431fc13a3cf2bc088bb41ddeb7fbd795ebe24b045f4d258f311d3",
       "native": {}
     },
@@ -767,7 +767,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:264e36c71e15beddc3211df325e8456b37691a3f73ef702a572887be30ffd086",
       "native": {}
     },
@@ -795,7 +795,7 @@
         }
       ],
       "assignee": null,
-      "external_ids": {},
+      "sync": {},
       "source_hash": "sha256:dd8a421f1e79319bd49352378ff8baf1056c61cec982a89eff7ac06901cc8277",
       "native": {}
     }

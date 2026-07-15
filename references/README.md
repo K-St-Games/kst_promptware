@@ -19,6 +19,10 @@ This folder contains research and non-operational documentation. These files inf
 | [`agent-orchestrator-roadmap.md`](agent-orchestrator-roadmap.md) | Roadmap | Tiers 2–4: thin CLI, runtime adapters, GitHub/cartridge, policy autonomy | High |
 | [`skills-library-proposal-062526.md`](skills-library-proposal-062526.md) | Technical proposal | Skills-layer design rationale, skill vs rule vs agent boundary, 15-skill expansion roster | High |
 | [`pm-feature-feedback.md`](pm-feature-feedback.md) | Review memo | PM export sync state, deletion semantics, schema strictness, adapter readiness | High |
+| [`ponytail-patterns.md`](ponytail-patterns.md) | Adapted pattern reference | Code-size ladder, one-check rule, ceiling comments, root-cause fix — extracted from ponytail (DietrichGebert, MIT) | Medium |
+| [`repo-review-070326.md`](repo-review-070326.md) | Review memo | Full-repo review: harness-facing install defects, drift/duplication, token economics, rigidity vs. harness leverage; prioritized punch list | High |
+| [`solo-profile-proposal-070326.md`](solo-profile-proposal-070326.md) | Technical proposal | Solo Baseline profile (v1): harness-neutral doc set (AGENTS/STATE/PROJECT/CONVENTIONS/REVIEWS) for solo multi-agent development with a guest-reviewer lane; extended by the planning-cascade proposal | High |
+| [`planning-cascade-proposal-070326.md`](planning-cascade-proposal-070326.md) | Technical proposal | Solo workflow standard v2.1: four core planning altitudes with required steering sections (exit criteria, evidence close-outs, do-not-start/do-not-reopen fences), trigger-gated machinery (state card, docs index, tiers), two spec weights; revised after multi-repo review | High |
 
 ## Usage
 

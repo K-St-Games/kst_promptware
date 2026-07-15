@@ -42,6 +42,7 @@ Don't read these reflexively — fetch when relevant.
 | Research and synthesize a topic | [`skills/deep-research/SKILL.md`](skills/deep-research/SKILL.md) |
 | Write a structured code review | [`skills/code-review/SKILL.md`](skills/code-review/SKILL.md) |
 | Write a session handoff | [`skills/session-handoff/SKILL.md`](skills/session-handoff/SKILL.md) |
+| Export repo status to a PM tool (GitHub Issues / Linear / Jira) | [`skills/pm-export/SKILL.md`](skills/pm-export/SKILL.md) |
 
 ## Repository structure
 
@@ -57,6 +58,7 @@ Don't read these reflexively — fetch when relevant.
 ├── LICENSE                       # MIT
 ├── work-orders/                  # Bounded execution units (WO-XXXX.md)
 ├── schemas/                      # Frontmatter validation (JSON Schema)
+├── pm/                           # Tool-agnostic PM export (derived from governance docs)
 ├── features/  decisions/  playbooks/  commands/   # Bundle directories (filling via WO-0002+)
 ├── templates/                    # work-order.md (bundle) + v3 session framework (companion layer)
 ├── guides/                       # Operational protocols (git, deployment)

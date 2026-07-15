@@ -82,6 +82,7 @@ All Standard skills apply. Add:
 | `skills/multi-agent-design-exploration/SKILL.md` | `.claude/skills/multi-agent-design-exploration.md` | |
 | `skills/project-philosophy-document/SKILL.md` | `.claude/skills/project-philosophy-document.md` | |
 | `skills/work-order-intake/SKILL.md` | `.claude/skills/work-order-intake.md` | Invoke as `/work-order-intake` |
+| `skills/pm-export/SKILL.md` | `.claude/skills/pm-export.md` | Invoke as `/pm-export` |
 
 ---
 

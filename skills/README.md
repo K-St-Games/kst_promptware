@@ -19,6 +19,7 @@ Invokable workflows for Claude Code. Each skill is a bounded, reusable procedure
 | [`deep-research`](deep-research/SKILL.md) | Standard | Multi-source web research synthesized into a cited report |
 | [`code-review`](code-review/SKILL.md) | Standard | Structured code review with severity-labelled findings |
 | [`session-handoff`](session-handoff/SKILL.md) | Minimal | Write a clean HANDOFF.md for the next agent or session |
+| [`pm-export`](pm-export/SKILL.md) | Full | Project governance artifacts into a tool-agnostic PM export (GitHub Issues / Linear / Jira) |
 
 ## How Skills Differ from Agents
 

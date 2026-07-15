@@ -41,7 +41,7 @@ Selectable rules, skills, agents, and profiles that downstream projects copy and
 | F-014 Agent + skill schemas | `schemas/agent.schema.json`, `schemas/skill.schema.json` | — | `delivered` |
 | F-015 Validation playbook + WO clarifications | `playbooks/validation-checklist.md` closeout checklist + `clarifications` frontmatter field on `templates/work-order.md` (v0.3.0) | — | `delivered` |
 | F-016 PM export | `pm-export` skill + `schemas/pm-export.schema.json` + derived `pm/pm-export.json` — tool-agnostic projection of work orders, features, and ledger for external trackers | — | `delivered` |
-| F-017 Repository conformance and consolidation | Dependency-free active-doc audit, current drift repair, and bounded follow-up sequence for governance, session/profile, and PM contract improvements | WO-0008 | `draft` |
+| F-017 Repository conformance and consolidation | Dependency-free active-doc audit, current drift repair, and bounded follow-up sequence for governance, session/profile, and PM adapter proof | WO-0008 | `draft` |
 
 ## Companion Layer (not bundle-governed)
 

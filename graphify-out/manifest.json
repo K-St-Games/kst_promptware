@@ -1,0 +1,447 @@
+{
+  "/home/node/.openclaw/workspace/projects/kst_promptware/schemas/agent.schema.json": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "163c899c68056628571b309d30b33320",
+    "semantic_hash": "163c899c68056628571b309d30b33320"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/schemas/skill.schema.json": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "8d6b3b3f351292127a2b02d8c89de02a",
+    "semantic_hash": "8d6b3b3f351292127a2b02d8c89de02a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/schemas/work-order.schema.json": {
+    "mtime": 1781316406.5408819,
+    "ast_hash": "71e7c812d500be9e12f8057782fe8185",
+    "semantic_hash": "71e7c812d500be9e12f8057782fe8185"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/AGENTS.md": {
+    "mtime": 1781642044.3622808,
+    "ast_hash": "5b8c115b11e4fe5d01c9920f231e06e3",
+    "semantic_hash": "5b8c115b11e4fe5d01c9920f231e06e3"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/CHANGELOG.md": {
+    "mtime": 1781316406.539882,
+    "ast_hash": "0d5591f645141164cf463be1e989b3de",
+    "semantic_hash": "0d5591f645141164cf463be1e989b3de"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/README.md": {
+    "mtime": 1781642044.3622808,
+    "ast_hash": "7a5bb9aabf54687868ca17f349109401",
+    "semantic_hash": "7a5bb9aabf54687868ca17f349109401"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/README.md": {
+    "mtime": 1781642044.3622808,
+    "ast_hash": "f793ddad0aae7b7563b74674bc6be12a",
+    "semantic_hash": "f793ddad0aae7b7563b74674bc6be12a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/architect.md": {
+    "mtime": 1781642044.3622808,
+    "ast_hash": "f7288fe296de001933d4f9f07a5a5520",
+    "semantic_hash": "f7288fe296de001933d4f9f07a5a5520"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/builder.md": {
+    "mtime": 1781642044.3622808,
+    "ast_hash": "77a3b2350d6d5a115087c7fe8e6598f9",
+    "semantic_hash": "77a3b2350d6d5a115087c7fe8e6598f9"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/code-reviewer.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "9d64cc1e2999994de70da94019c0da33",
+    "semantic_hash": "9d64cc1e2999994de70da94019c0da33"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/gatekeeper.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "c83b270bf7d42f9a02e3c326fa63657b",
+    "semantic_hash": "c83b270bf7d42f9a02e3c326fa63657b"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/planner.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "f6773d5d403af8b661f8934df746435c",
+    "semantic_hash": "f6773d5d403af8b661f8934df746435c"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/security-reviewer.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "04b73f8092110be63001116d67901fe0",
+    "semantic_hash": "04b73f8092110be63001116d67901fe0"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/silent-failure-hunter.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "0c867a352e80f3e7530f21efbaa59f1e",
+    "semantic_hash": "0c867a352e80f3e7530f21efbaa59f1e"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/agents/spec-miner.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "16083a083f51ef801caa9c3fec1d2fbb",
+    "semantic_hash": "16083a083f51ef801caa9c3fec1d2fbb"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/README.md": {
+    "mtime": 1779831183.3756022,
+    "ast_hash": "c242be43ad8a3a30b1f2f3fc10a41a40",
+    "semantic_hash": "c242be43ad8a3a30b1f2f3fc10a41a40"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/CONTEXT.md": {
+    "mtime": 1779831183.3756022,
+    "ast_hash": "8e6afaf640da99774afb1c671f991217",
+    "semantic_hash": "8e6afaf640da99774afb1c671f991217"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/HANDOFF_TEMPLATE.md": {
+    "mtime": 1779831183.3756022,
+    "ast_hash": "7f389119291a7dc17f8ec2eb2052093c",
+    "semantic_hash": "7f389119291a7dc17f8ec2eb2052093c"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/MIGRATION_NOTES.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "d4d07903e4c50a84fb5f1085399da2c9",
+    "semantic_hash": "d4d07903e4c50a84fb5f1085399da2c9"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/PROGRESS.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "e94a8dff50672ce274ebf5355479fff6",
+    "semantic_hash": "e94a8dff50672ce274ebf5355479fff6"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/README.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "eb79c7bf31895680eecb2be27f619221",
+    "semantic_hash": "eb79c7bf31895680eecb2be27f619221"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v02/WORKFLOW.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "8afcd9329a29555b7a2b9ed0d822fb8a",
+    "semantic_hash": "8afcd9329a29555b7a2b9ed0d822fb8a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v2-framework/AgentRoles.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "6123034898e7c310548151dac36ca267",
+    "semantic_hash": "6123034898e7c310548151dac36ca267"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v2-framework/ContextChain.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "7747a469d541c81ffc6f1f460733dbf2",
+    "semantic_hash": "7747a469d541c81ffc6f1f460733dbf2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v2-framework/QUICK_REFERENCE.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "a0948d87f669e7af7165230f9e8c640e",
+    "semantic_hash": "a0948d87f669e7af7165230f9e8c640e"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v2-framework/README.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "fae5cf916101e60102772493e333d41f",
+    "semantic_hash": "fae5cf916101e60102772493e333d41f"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/templates-v2-framework/Standards-FeatureExpansion.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "ba8234f3daf4949e779f52eb767a97e5",
+    "semantic_hash": "ba8234f3daf4949e779f52eb767a97e5"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v01/BACKLOG_2_WEEKS.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "83c9abf17c67182e2ea74a5ad6475048",
+    "semantic_hash": "83c9abf17c67182e2ea74a5ad6475048"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v01/PRODUCT_V1.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "aa3a63378210efe7bc4bf823ac00f839",
+    "semantic_hash": "aa3a63378210efe7bc4bf823ac00f839"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/CONTEXT.md": {
+    "mtime": 1779831183.3766022,
+    "ast_hash": "8e6afaf640da99774afb1c671f991217",
+    "semantic_hash": "8e6afaf640da99774afb1c671f991217"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/HANDOFF_TEMPLATE.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "7f389119291a7dc17f8ec2eb2052093c",
+    "semantic_hash": "7f389119291a7dc17f8ec2eb2052093c"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/MIGRATION_NOTES.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "d4d07903e4c50a84fb5f1085399da2c9",
+    "semantic_hash": "d4d07903e4c50a84fb5f1085399da2c9"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/PROGRESS.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "e94a8dff50672ce274ebf5355479fff6",
+    "semantic_hash": "e94a8dff50672ce274ebf5355479fff6"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/README.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "eb79c7bf31895680eecb2be27f619221",
+    "semantic_hash": "eb79c7bf31895680eecb2be27f619221"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/archive/v02/WORKFLOW.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "8afcd9329a29555b7a2b9ed0d822fb8a",
+    "semantic_hash": "8afcd9329a29555b7a2b9ed0d822fb8a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/capability-map.md": {
+    "mtime": 1781642044.3632805,
+    "ast_hash": "d2ffa6f0bca411056c660bc064c99b76",
+    "semantic_hash": "d2ffa6f0bca411056c660bc064c99b76"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/charter.md": {
+    "mtime": 1781316406.539882,
+    "ast_hash": "e7f9b23d07a37b65b4f68fdcae3633c5",
+    "semantic_hash": "e7f9b23d07a37b65b4f68fdcae3633c5"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/constitution.md": {
+    "mtime": 1781316406.5408819,
+    "ast_hash": "bc6bb3f92308a0d4f3360df177c41655",
+    "semantic_hash": "bc6bb3f92308a0d4f3360df177c41655"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/guides/contributing.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "66ac3ba6c4dc86ba16d9bb550b362bad",
+    "semantic_hash": "66ac3ba6c4dc86ba16d9bb550b362bad"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/guides/development-loop.md": {
+    "mtime": 1781509074.6667602,
+    "ast_hash": "14a1a5edc3d70d73bffa2de718be1247",
+    "semantic_hash": "14a1a5edc3d70d73bffa2de718be1247"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/guides/git_procedures.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "b6c5117cad9c9c1bbca818de8ae5f052",
+    "semantic_hash": "b6c5117cad9c9c1bbca818de8ae5f052"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/guides/microservice-workflow-guide.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "466f63c759b844ed724519a6301b5561",
+    "semantic_hash": "466f63c759b844ed724519a6301b5561"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/guides/tier-epic-specification-framework.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "bd5e3f55842086483a0e7e8429fce48e",
+    "semantic_hash": "bd5e3f55842086483a0e7e8429fce48e"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/ledger.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "12df96f5f8112277e3232d0badad276e",
+    "semantic_hash": "12df96f5f8112277e3232d0badad276e"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/profiles/README.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "1a3a9c33c0486c59111a220476670ab4",
+    "semantic_hash": "1a3a9c33c0486c59111a220476670ab4"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/profiles/full.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "480ca7ac9a553df38b9d1c3733d479fb",
+    "semantic_hash": "480ca7ac9a553df38b9d1c3733d479fb"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/profiles/minimal.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "abddebdcfb29bb5b981b65a103c3eeb0",
+    "semantic_hash": "abddebdcfb29bb5b981b65a103c3eeb0"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/profiles/standard.md": {
+    "mtime": 1781642044.5512602,
+    "ast_hash": "17a38258f13d221f7cb0023f8349355f",
+    "semantic_hash": "17a38258f13d221f7cb0023f8349355f"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/README.md": {
+    "mtime": 1781642044.683246,
+    "ast_hash": "29d2f98c0dad582be7c49d05de203f77",
+    "semantic_hash": "29d2f98c0dad582be7c49d05de203f77"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/agent-orchestrator-long-term-proposal.md": {
+    "mtime": 1781642044.7632372,
+    "ast_hash": "0da73d74f729dbb35b222d6275c037d7",
+    "semantic_hash": "0da73d74f729dbb35b222d6275c037d7"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/agent-orchestrator-roadmap.md": {
+    "mtime": 1781642044.8442285,
+    "ast_hash": "37b3ebf1e0148250682fa8a5e8340880",
+    "semantic_hash": "37b3ebf1e0148250682fa8a5e8340880"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/agent-orchestrator-short-term-proposal.md": {
+    "mtime": 1781642044.9532166,
+    "ast_hash": "63555ca774af4d44bdebe3a133ae5ea0",
+    "semantic_hash": "63555ca774af4d44bdebe3a133ae5ea0"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/agent-orchestrator-spec.md": {
+    "mtime": 1781642045.1471956,
+    "ast_hash": "69fd4a1141ce45ed89b8fc5f086ec06d",
+    "semantic_hash": "69fd4a1141ce45ed89b8fc5f086ec06d"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/claude-recommendations.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "33c52a470d340032b9edf9bb7215d63a",
+    "semantic_hash": "33c52a470d340032b9edf9bb7215d63a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/cursor-recommendations.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "093ef953c03001206c6ff10592a1d5e2",
+    "semantic_hash": "093ef953c03001206c6ff10592a1d5e2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/improvement-proposal-052526.md": {
+    "mtime": 1779831183.3776019,
+    "ast_hash": "16c889c55464f832ac42ed080e8e4321",
+    "semantic_hash": "16c889c55464f832ac42ed080e8e4321"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/improvement-proposal-052726.md": {
+    "mtime": 1779864526.0656073,
+    "ast_hash": "1a7ea003b04c0cc26b38a261bd1a2bba",
+    "semantic_hash": "1a7ea003b04c0cc26b38a261bd1a2bba"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/references/the-case-for-custom-ai-tooling.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "1d9767487d2edba81c3183e088c2b0c2",
+    "semantic_hash": "1d9767487d2edba81c3183e088c2b0c2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/README.md": {
+    "mtime": 1781642045.1471956,
+    "ast_hash": "879edddded5ead5dfe46f647337cf1d2",
+    "semantic_hash": "879edddded5ead5dfe46f647337cf1d2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/coding-style.md": {
+    "mtime": 1781642045.1471956,
+    "ast_hash": "daea35ea59e774f66e7e9cbd64b4c9e0",
+    "semantic_hash": "daea35ea59e774f66e7e9cbd64b4c9e0"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/git-workflow.md": {
+    "mtime": 1781642045.1471956,
+    "ast_hash": "2f929962285aca4da2e23c3bd078023a",
+    "semantic_hash": "2f929962285aca4da2e23c3bd078023a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/patterns.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "084c2ede53f55c3b05aaa401fbbd481a",
+    "semantic_hash": "084c2ede53f55c3b05aaa401fbbd481a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/performance.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "26ae5f1766c40b496c80fd10b02ca012",
+    "semantic_hash": "26ae5f1766c40b496c80fd10b02ca012"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/security.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "7c8f4171f36064600fe0412812f8f42b",
+    "semantic_hash": "7c8f4171f36064600fe0412812f8f42b"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/common/testing.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "4c9732284d80bbcee64cbe235d842c1f",
+    "semantic_hash": "4c9732284d80bbcee64cbe235d842c1f"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/go/README.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "88dbf25ebafccad53b64d1752073086c",
+    "semantic_hash": "88dbf25ebafccad53b64d1752073086c"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/python/README.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "b51baa95a10e231439fd7d673eca73ef",
+    "semantic_hash": "b51baa95a10e231439fd7d673eca73ef"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/rules/typescript/README.md": {
+    "mtime": 1781642045.1481955,
+    "ast_hash": "eb96b2b0087b02eb768cffd679f72d1a",
+    "semantic_hash": "eb96b2b0087b02eb768cffd679f72d1a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/README.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "45cde686a3c434eb53a389e2b6c8a23a",
+    "semantic_hash": "45cde686a3c434eb53a389e2b6c8a23a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/architecture-decision-records/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "b1a928849aee504d5178322fa039c69b",
+    "semantic_hash": "b1a928849aee504d5178322fa039c69b"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/code-review/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "5e3a3553912e1103a3e28105df590ced",
+    "semantic_hash": "5e3a3553912e1103a3e28105df590ced"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/deep-research/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "51f4b02d61d4aa609a7cfdb8660b32b7",
+    "semantic_hash": "51f4b02d61d4aa609a7cfdb8660b32b7"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/multi-agent-design-exploration/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "fecfe3824a09192411223227c245e947",
+    "semantic_hash": "fecfe3824a09192411223227c245e947"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/project-philosophy-document/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "f15d9080b8b731d984aa58d89b9809e8",
+    "semantic_hash": "f15d9080b8b731d984aa58d89b9809e8"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/session-handoff/SKILL.md": {
+    "mtime": 1781642045.1491954,
+    "ast_hash": "d4d6186390948ea9d155cab2487b7e10",
+    "semantic_hash": "d4d6186390948ea9d155cab2487b7e10"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/skills/work-order-intake/SKILL.md": {
+    "mtime": 1781642045.1501951,
+    "ast_hash": "be54222a85dff0d76e10445a353cfb94",
+    "semantic_hash": "be54222a85dff0d76e10445a353cfb94"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/technical-suggestions/phaser-project-template.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "774f8ba183aded410a61feea1b9c3447",
+    "semantic_hash": "774f8ba183aded410a61feea1b9c3447"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/technical-suggestions/tech-stack-recommendations.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "0de64c896ddf76729594588eef92ddcd",
+    "semantic_hash": "0de64c896ddf76729594588eef92ddcd"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/CONTEXT.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "0e793a237aa222590a29c2c6dc88ec0b",
+    "semantic_hash": "0e793a237aa222590a29c2c6dc88ec0b"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/Devlog_TEMPLATE.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "84b8654ac45188e43bd9c28d171c4a8a",
+    "semantic_hash": "84b8654ac45188e43bd9c28d171c4a8a"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/HANDOFF.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "1e04dd6ffbbcb4236f2f5bc9179a0152",
+    "semantic_hash": "1e04dd6ffbbcb4236f2f5bc9179a0152"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/PROGRESS.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "440ac98af01b027a1e2ae1eb6fe438a2",
+    "semantic_hash": "440ac98af01b027a1e2ae1eb6fe438a2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/ProjectPlan/ProjectPlan_Template.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "6cf285cb7e7ff3f02f00f38324ebfbc4",
+    "semantic_hash": "6cf285cb7e7ff3f02f00f38324ebfbc4"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/ProjectPlan/README.md": {
+    "mtime": 1779831183.3786018,
+    "ast_hash": "5e37628579d4184a3402b90212d13116",
+    "semantic_hash": "5e37628579d4184a3402b90212d13116"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/README.md": {
+    "mtime": 1781316406.5408819,
+    "ast_hash": "6d0a36232136d2d672ae31ad71fd1ae9",
+    "semantic_hash": "6d0a36232136d2d672ae31ad71fd1ae9"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/WORKFLOW.md": {
+    "mtime": 1779831183.3796017,
+    "ast_hash": "0b661a4ad40cb3660b206dd5c540b31d",
+    "semantic_hash": "0b661a4ad40cb3660b206dd5c540b31d"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/general-engineering-standards.md": {
+    "mtime": 1779831183.3796017,
+    "ast_hash": "2809cf67f58f38bb6e7d849eae567256",
+    "semantic_hash": "2809cf67f58f38bb6e7d849eae567256"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/templates/work-order.md": {
+    "mtime": 1781316406.5408819,
+    "ast_hash": "86333d058ce5084aae22a32099af54b2",
+    "semantic_hash": "86333d058ce5084aae22a32099af54b2"
+  },
+  "/home/node/.openclaw/workspace/projects/kst_promptware/work-orders/WO-0001.md": {
+    "mtime": 1781316406.5418818,
+    "ast_hash": "3424a554d409647670493bd75ffd5d86",
+    "semantic_hash": "3424a554d409647670493bd75ffd5d86"
+  }
+}

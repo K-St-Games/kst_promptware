@@ -23,6 +23,8 @@
 | D6 | Skills catalog/profile contradiction | `multi-agent-design-exploration` and `project-philosophy-document` become `profile: full` (frontmatter + catalog). Standard stays at 4 skills. |
 | D7 | Model guidance | Prose recommends family aliases only (`sonnet`, `opus`); no concrete model IDs anywhere in prose. Schema enums unchanged. |
 | D8 | Workspace-specific examples in toolkit docs | Genericize (Crowbot / agent-os / HTF / `C:\Lonnie\...` → neutral placeholders). Meaning kept, private context removed. |
+| D9 | `STATUS.md` (landed on main 2026-07-21, commit `db0d6de`, author `HTF_Coder`) | Keep the file — a root status dashboard is reasonable. Reconcile it in Track C (last, so it reflects the *post*-consolidation state) rather than treating it as a parallel status surface. Add the missing governance header (Constitution §2.1 — every governed artifact needs one; this file currently has none, only a YAML front-matter block). |
+| D10 | `graphify-out/` and `paperclip/` (landed on this branch 2026-07-21, commit `b663e64`, author `HTF_Coder`, ~1hr before D9's commit) | **Out of scope — flag, do not touch.** 30,000+ lines of generated tool-cache output (`graphify-out/`, incl. a 28k-line `graph.json` and content-hash cache files) and a `paperclip/` directory that appears to be another repo's content (README, agent docs), landed directly on this shared branch. Looks like accidental cross-repo/cache contamination, not reviewed content. This session must not build on, reference, or silently absorb it. Raise it to the human in Track C close-out; do not delete or revert it without explicit instruction. |
 
 ## Already done — do not re-do
 
@@ -72,7 +74,9 @@
 
 ## Track C: Verify & Close  — **Size S · 🟡**
 
-1. **Link check** (must pass repo-wide except `archive/`):
+0. **Reconcile `STATUS.md` per D9** (do this after Tracks A and B land, not before — it should describe the state you just produced). Add the four-line governance header (written by / amended by / read by / validated by — Builder tier / PR + human review / humans and agents orienting to current status / Constitution §2 gate lint). Rewrite **Now** to include the library layer (rules/agents/skills/profiles, F-008–F-014), the planning-docs toolkit, and pm-export (F-015–F-016). Rewrite **Recent** to end with this session's commits instead of stopping at the ponytail-patterns/enhancement-proposal entries. Leave **Next** and **Blockers** as-is unless Track A/B surfaced something that belongs there. Note in the ledger (step 3 below) that `STATUS.md` is now a third status surface alongside `capability-map.md` and `AGENTS.md`'s docs map — flag, don't resolve; the constitution doesn't yet say which wins on conflict.
+
+1. **Link check** (must pass repo-wide except `archive/` and `graphify-out/` — see D10):
 
 ```bash
 python3 - <<'EOF'
@@ -95,7 +99,7 @@ EOF
 ```
 
 2. Run `playbooks/validation-checklist.md` §3 over every changed file (governance headers intact, HTTPS links, no new nouns).
-3. Append a ledger entry (next free L-number): P0 fixes + toolkit consolidation delivered via the lightweight path (L-011 precedent); note the `code-review` → `structured-code-review` rename for downstream consumers.
+3. Append a ledger entry (next free L-number): P0 fixes + toolkit consolidation delivered via the lightweight path (L-011 precedent); note the `code-review` → `structured-code-review` rename for downstream consumers. Append a second entry: `STATUS.md` is a third status surface with no stated precedence against `capability-map.md`/`AGENTS.md` — open, for a human to resolve. Append a third entry (or a direct note to the human, not the ledger, if more urgent): `graphify-out/` and `paperclip/` (commit `b663e64`) appear to be accidental cross-repo/cache contamination on this branch — needs a human decision (revert, `.gitignore` + remove, or confirm intentional) before this branch merges. Do not resolve it yourself.
 4. Commit in two logical commits (`fix(library): …` for Track A, `docs(references): …` for Track B), conventional lowercase, specific files staged — never `git add -A`. Push with `git push -u origin claude/repo-review-feedback-zifrlr`.
 5. Fill the close-out table below; open a PR only if your operator has authorized it — otherwise report ready-for-PR with the branch name.
 

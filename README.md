@@ -34,6 +34,7 @@ Day-to-day rules and procedures:
 - [Canonical git workflow](guides/contributing.md) — branching, commit format (Conventional Commits), PR checklist.
 - [Git quick reference](guides/git_procedures.md) — short CLI cheat sheet.
 - [Microservice workflow guide](guides/microservice-workflow-guide.md) — progressive deployment.
+- [K Street ASCII worldcraft](guides/k-street-ascii-worldcraft.md) — color, glyphs, HUD, 1D/aeolian terrain. Load before painting SCORCHED MARS or Titan’s Edge.
 
 ### Framework templates (`templates/`)
 

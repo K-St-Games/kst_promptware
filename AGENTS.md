@@ -33,6 +33,7 @@ Don't read these reflexively — fetch when relevant.
 | Code style / engineering baseline | [`templates/general-engineering-standards.md`](templates/general-engineering-standards.md) |
 | Run a session (PM / IC / QA loop, cadence, compaction) | [`templates/WORKFLOW.md`](templates/WORKFLOW.md) |
 | Hand off mid-task | [`templates/HANDOFF.md`](templates/HANDOFF.md) |
+| Paint ASCII / color / HUD / planetary terrain (SCORCHED MARS, Titan’s Edge) | [`guides/k-street-ascii-worldcraft.md`](guides/k-street-ascii-worldcraft.md) |
 | Background research / philosophy | [`references/README.md`](references/README.md) |
 | Install this library into a new project | [`profiles/`](profiles/) — Minimal / Standard / Full manifests |
 | Apply always-on coding and workflow rules | [`rules/common/`](rules/common/) + language stubs in `rules/typescript/`, `rules/python/`, `rules/go/` |
